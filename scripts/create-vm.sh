@@ -6,8 +6,10 @@ read -p 'location - e.g: northeurope ' l
 read -p 'Resource Group - e.g: rg-myvm ' rg
 read -p 'VM Name - e.g: myvm01 ' vmname
 read -p 'VM Size - e.g: Standard_D2s_v3 ' vmsize
+read -p 'VM Image - e.g: UbuntuLTS ' vmimage
 read -p 'VNET Name (that currently exists) - e.g: vnet01 ' vname
 read -p 'Subnet Name (that currently exists) - e.g: snet01 ' sname
+read -p 'Please enter tags for this resource. E.g: tier=dev   ' tags
 echo
 echo "You have entered $l $rg $vmname $vmsize $vname $sname "
 echo 
@@ -33,8 +35,8 @@ echo
 echo "Creating an Ubuntu VM..."
 
 # Request a VM 
-az vm create -n $vmname  --location $l -g $rg --size $vmsize --image UbuntuLTS \
-  --subnet sname --vnet-name $vname --generate-ssh-keys 
+az vm create -n $vmname  --location $l -g $rg --size $vmsize --image $vmimage \
+  --subnet sname --vnet-name $vname --generate-ssh-keys  --tags $tags
 
 echo
 echo "finished..."
