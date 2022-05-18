@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# Request a storage Account Example
-# az storage account create --resource-group rg-011991 --name sa01991  -l northeurope  --sku Standard_LRS --tags tier=dev
-
-read -p 'Resource Group - e.g: rg-myvm ' rg
+read -p 'Resource Group - e.g: rgmyvm ' rg
 read -p 'Please enter your storage account name, e.g: samyapp1 ' saname
-read -p 'location - e.g: northeurope ' l
+read -p 'location - e.g: northeurope uksouth ukwest ' l
 read -p 'sku - e.g: Standard_LRS ' sku
 read -p 'Please enter tags for this resource. E.g: tier=dev   ' tags
 read -p "Do you want to proceed? (yes/no) " yn

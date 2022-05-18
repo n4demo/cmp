@@ -3,7 +3,7 @@
 
 echo "Please enter details to create a new VNET."
 read -p 'Resource Group - e.g: rgmyvm ' rg
-read -p 'location - e.g: northeurope ' l
+read -p 'location - e.g: northeurope uksouth ukwest ' l
 read -p 'VNET Name - e.g: vnet01 ' vname
 read -p 'Subnet Name - e.g: snet01 ' sname
 read -p 'VNET Address Prefix - e.g: 10.100.0.0/16   ' vprefix
