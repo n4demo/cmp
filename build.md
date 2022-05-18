@@ -12,6 +12,7 @@ docker push node4demo/cmp:latest
 docker push node4demo/cmp:0.1.1
 docker push node4demo/n4stack-manage:latest
 docker push node4demo/n4stack-manage:0.1.2
+docker stop xxx
 
 ## now run container locally
 docker container run --name cmp --rm -it node4demo/cmp:latest

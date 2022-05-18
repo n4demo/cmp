@@ -33,7 +33,7 @@ echo "Creating a VNET..."
 echo
 
 # Request a VNET
-az network vnet create -g $rg -n $vname --subnet-name $sname --address-prefix vprefix  --subnet-prefix $sprefix -l $l
+az network vnet create -g $rg -n $vname --subnet-name $sname --address-prefix $vprefix  --subnet-prefix $sprefix -l $l
 echo
 echo "finished..."
 echo
