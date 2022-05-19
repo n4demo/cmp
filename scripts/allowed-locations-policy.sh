@@ -1,7 +1,7 @@
 
 
-read -p 'Please enter your a Resource Group that you limit locations to UKSouth, UKWest. E.g uk-rg' rg
-read -p 'location - e.g: northeurope uksouth ukwest ' l
+read -p 'Please enter your a Resource Group that you limit locations to. E.g uk-rg' rg
+read -p 'Enter location - e.g: uksouth ukwest ' l
 echo "you have entered " $rg $l
 read -p "Do you want to proceed? (yes/no) " yn
 
