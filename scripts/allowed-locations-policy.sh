@@ -1,7 +1,7 @@
 
 
 read -p 'Please enter your a Resource Group that you limit locations to. E.g uk-rg' rg
-read -p 'Enter location - e.g: uksouth ukwest ' l
+read -p 'Enter resource group location - e.g: uksouth ukwest ' l
 echo "you have entered " $rg $l
 read -p "Do you want to proceed? (yes/no) " yn
 
